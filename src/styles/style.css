@@ -192,7 +192,7 @@ body {
   grid-row: 4 / 4;
   background-color: var(--light);
   border-radius: 20px;
-  border: solid 2px var(--gray);
+  border: solid 1px var(--gray);
   padding: 20px;
 }
 
@@ -250,7 +250,14 @@ body {
 }
 
 .projects-content .row-3 ul li {
-  padding: 10px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 .projects-content .row-3 ul img {
@@ -265,7 +272,7 @@ body {
 /* project 1 */
 
 .project-1 {
-  border: solid 2px var(--gray);
+  border: solid 1px var(--gray);
   border-radius: 20px;
   background-color: var(--light);
 }
@@ -293,7 +300,7 @@ body {
 
 /* project 2 */
 .project-2 {
-  border: solid 2px var(--gray);
+  border: solid 1px var(--gray);
   border-radius: 20px;
   background-color: var(--light);
 }
@@ -373,7 +380,16 @@ body {
 
   .wrap {
     margin-top: 30px;
-    border-radius: 20px;
+    border-radius: 30px;
+  }
+
+  .about-section,
+  .projects-section {
+    padding-top: 80px;
+  }
+
+  .about-content embed {
+    height: 300px;
   }
 
   .home-content .row-1 h1,
@@ -407,7 +423,7 @@ body {
   }
 
   .projects-content .row-3 ul img {
-    height: 30px;
+    height: 40px;
   }
 
   .wip-pill {
