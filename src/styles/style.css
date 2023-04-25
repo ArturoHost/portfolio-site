@@ -30,10 +30,6 @@ h3 {
   color: var(--darker);
 }
 
-.paragraph {
-  font-size: 12pt;
-}
-
 body {
   display: flex;
   place-content: center;
@@ -361,7 +357,7 @@ body {
   border-radius: 50px;
   background-color: var(--darker);
   color: var(--lighter);
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 /* Responsive design */
@@ -427,6 +423,7 @@ body {
   }
 
   .wip-pill {
-    font-size: small;
+    padding: 5px;
+    font-size: 7pt;
   }
 }
