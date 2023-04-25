@@ -265,6 +265,11 @@ body {
   padding-bottom: 40px;
 }
 
+.projects-content .row-5 {
+  grid-row: 5 / 5;
+  padding-bottom: 40px;
+}
+
 /* project 1 */
 
 .project-1 {
@@ -319,6 +324,34 @@ body {
 }
 
 .project-2-content p {
+  text-align: justify;
+}
+
+/* project 2 */
+.project-3 {
+  border: solid 1px var(--gray);
+  border-radius: 20px;
+  background-color: var(--light);
+}
+
+.project-3-content {
+  display: flex;
+  padding: 5px;
+  margin: 0px;
+  list-style: none;
+}
+
+.project-3-content div:nth-child(1),
+.project-3-content div:nth-child(2) {
+  width: 50%;
+  padding: 20px;
+}
+
+.project-3-content img {
+  width: 100%;
+}
+
+.project-3-content p {
   text-align: justify;
 }
 
@@ -400,20 +433,24 @@ body {
   }
 
   .project-1-content,
-  .project-2-content {
+  .project-2-content,
+  .project-3-content {
     flex-direction: column-reverse;
     padding: 20px;
   }
 
   .project-1-content img,
-  .project-2-content img {
+  .project-2-content img,
+  .project-3-content img {
     margin-top: 20px;
   }
 
   .project-1-content div:nth-child(1),
   .project-1-content div:nth-child(2),
   .project-2-content div:nth-child(1),
-  .project-2-content div:nth-child(2) {
+  .project-2-content div:nth-child(2),
+  .project-3-content div:nth-child(1),
+  .project-3-content div:nth-child(2) {
     width: 100%;
     padding: 0px;
   }
