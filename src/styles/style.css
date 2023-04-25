@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --light: #f2f2f2;
+  --lighter: #ffffff;
+  --dark: #2e2e2e;
+  --darker: #151515;
+  --gray: #848484;
+
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html h1,
+h2,
+h3 {
+  margin: 0px;
+  color: var(--darker);
+}
+
+.paragraph {
+  font-size: 12pt;
+}
+
+body {
+  display: flex;
+  place-content: center;
+  width: 100%;
+  margin: 0px;
+  background-color: var(--light);
+}
+
+.wrap {
+  width: 1366px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 80px;
+  background-color: var(--lighter);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+}
+
+.header ul {
+  display: flex;
+  width: 500px;
+  height: 40px;
+  padding: 4px;
+  margin: 0px;
+  list-style: none;
+  border-radius: 50px 50px 50px 50px;
+  background-color: var(--lighter);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.header li {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.header a {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 50px 50px 50px;
+  text-decoration: none;
+  color: var(--dark);
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: var(--dark);
+  color: var(--lighter);
+}
+
+/* home */
+.home-section {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+.home-content {
+  text-align: center;
+}
+
+.home-content .col-1 {
+  grid-column: 1 / 1;
+}
+
+.home-content .row-1 {
+  grid-row: 1 / 3;
+  text-align: center;
+}
+
+.home-content .row-1 h1 {
+  font-size: 50pt;
+  line-height: 1;
+}
+
+.home-content .row-2 {
+  grid-row: 2 / 3;
+}
+
+.home-content .row-2 h3 {
+  font-size: 20pt;
+  font-weight: 300;
+}
+
+.home-content .row-3 {
+  grid-row: 3 / 3;
+  text-align: center;
+}
+
+/* about */
+
+.about-section {
+  padding-top: 40px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  padding: 80px;
+}
+
+.about-content .col-1 {
+  grid-column: 1 / 1;
+}
+
+.about-content .row-1 {
+  grid-row: 1 / 4;
+  text-align: center;
+}
+
+.about-content .row-1 h1 {
+  font-size: 50pt;
+  padding-bottom: 40px;
+}
+
+.about-content .row-2 {
+  grid-row: 2 / 4;
+}
+
+.about-content .row-2 p {
+  text-align: justify;
+  font-size: 12pt;
+  margin: 0px;
+  padding-bottom: 40px;
+}
+
+.about-content .row-3 {
+  grid-row: 3 / 4;
+  text-align: center;
+}
+
+.about-content .row-3 h3 {
+  padding-bottom: 40px;
+}
+
+.about-content .row-4 {
+  grid-row: 4 / 4;
+  background-color: var(--light);
+  border-radius: 20px;
+  border: solid 2px var(--gray);
+  padding: 20px;
+}
+
+/* projects */
+
+.projects-section {
+  padding-top: 40px;
+}
+
+.projects-content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  padding: 80px;
+}
+
+.projects-content .col-1 {
+  grid-column: 1 / 1;
+}
+
+.projects-content .row-1 {
+  grid-row: 1 / 5;
+  text-align: center;
+}
+
+.projects-content .row-1 h1 {
+  font-size: 50pt;
+  padding-bottom: 40px;
+}
+
+.projects-content .row-2 {
+  grid-row: 2 / 5;
+  text-align: justify;
+}
+
+.projects-content .row-2 p {
+  text-align: justify;
+  font-size: 12pt;
+  margin: 0px;
+  padding-bottom: 40px;
+}
+
+.projects-content .row-3 {
+  grid-row: 3 / 5;
+  padding-bottom: 40px;
+}
+
+.projects-content .row-3 ul {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.projects-content .row-3 ul li {
+  padding: 10px;
+}
+
+.projects-content .row-3 ul img {
+  height: 45px;
+}
+
+.projects-content .row-4 {
+  grid-row: 4 / 5;
+  padding-bottom: 40px;
+}
+
+/* project 1 */
+
+.project-1 {
+  border: solid 2px var(--gray);
+  border-radius: 20px;
+  background-color: var(--light);
+}
+
+.project-1-content {
+  display: flex;
+  padding: 5px;
+  margin: 0px;
+  list-style: none;
+}
+
+.project-1-content div:nth-child(1),
+.project-1-content div:nth-child(2) {
+  width: 50%;
+  padding: 20px;
+}
+
+.project-1-content img {
+  width: 100%;
+}
+
+.project-1-content p {
+  text-align: justify;
+}
+
+/* project 2 */
+.project-2 {
+  border: solid 2px var(--gray);
+  border-radius: 20px;
+  background-color: var(--light);
+}
+
+.project-2-content {
+  display: flex;
+  padding: 5px;
+  margin: 0px;
+  list-style: none;
+}
+
+.project-2-content div:nth-child(1),
+.project-2-content div:nth-child(2) {
+  width: 50%;
+  padding: 20px;
+}
+
+.project-2-content img {
+  width: 100%;
+}
+
+.project-2-content p {
+  text-align: justify;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}
+
+.footer-content img {
+  width: 25px;
+  padding: 10px;
+}
+
+/* Work in progress badge*/
+.wip-wrap {
+  display: flex;
+  place-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wip-pill {
+  padding: 8px;
+  border-radius: 50px;
+  background-color: var(--darker);
+  color: var(--lighter);
+  opacity: 0.4;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 920px) {
+  .header {
+    height: 60px;
+  }
+
+  .header ul {
+    width: 300px;
+    height: 30px;
+    font-size: small;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .wrap {
+    border-radius: 20px;
+  }
+
+  .home-content .row-1 h1,
+  .about-content .row-1 h1,
+  .projects-content .row-1 h1 {
+    font-size: 30pt;
+  }
+
+  .about-content,
+  .projects-content {
+    padding: 20px;
+  }
+
+  .project-1-content,
+  .project-2-content {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+
+  .project-1-content div:nth-child(1),
+  .project-1-content div:nth-child(2),
+  .project-2-content div:nth-child(1),
+  .project-2-content div:nth-child(2) {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .wip-pill {
+    font-size: small;
+  }
+}
