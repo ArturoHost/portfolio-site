@@ -13,6 +13,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html h1,
@@ -364,13 +372,14 @@ body {
   }
 
   .wrap {
+    margin-top: 30px;
     border-radius: 20px;
   }
 
   .home-content .row-1 h1,
   .about-content .row-1 h1,
   .projects-content .row-1 h1 {
-    font-size: 30pt;
+    font-size: 25pt;
   }
 
   .about-content,
@@ -384,12 +393,21 @@ body {
     padding: 20px;
   }
 
+  .project-1-content img,
+  .project-2-content img {
+    margin-top: 20px;
+  }
+
   .project-1-content div:nth-child(1),
   .project-1-content div:nth-child(2),
   .project-2-content div:nth-child(1),
   .project-2-content div:nth-child(2) {
     width: 100%;
     padding: 0px;
+  }
+
+  .projects-content .row-3 ul img {
+    height: 30px;
   }
 
   .wip-pill {
