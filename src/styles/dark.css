@@ -32,9 +32,31 @@ body.dark span {
 }
 
 body.dark .project {
-  background-color: var(--gray);
+  background-color: var(--light);
+}
+
+body.dark .project p {
+  color: var(--dark);
+}
+
+body.dark .project h3 {
+  color: var(--dark);
+}
+
+body.dark .project span {
+  color: var(--dark);
+}
+
+body.dark .about-content .row-4 {
+  background-color: var(--light);
 }
 
 body.dark .projects-content .row-3 ul li {
   background-color: var(--lighter);
+}
+
+body.dark footer #github-logo img {
+  background-color: var(--light);
+  padding: 2px;
+  border-radius: 50px;
 }

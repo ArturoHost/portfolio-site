@@ -1,5 +1,13 @@
-const darkButton = document.getElementById("dark-button");
+window.addEventListener("load", () => {
+  const themeButton = document.getElementById("theme-button");
+  let isDark = false;
 
-darkButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+  themeButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    isDark = !isDark;
+
+    !isDark
+      ? (document.getElementById("theme-button").innerHTML = "Dark")
+      : (document.getElementById("theme-button").innerHTML = "White");
+  });
 });
