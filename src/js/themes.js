@@ -1,5 +1,4 @@
 const themeButton = document.getElementById("theme-button");
-
 var theme;
 
 window.addEventListener("load", () => {
@@ -30,11 +29,11 @@ function themeCase(p) {
 
   switch (p) {
     case true:
-      document.getElementById("theme-button").innerHTML = lightIcon;
+      document.getElementById("theme-button").innerHTML = darkIcon;
       document.body.classList.remove("dark");
       break;
     case false:
-      document.getElementById("theme-button").innerHTML = darkIcon;
+      document.getElementById("theme-button").innerHTML = lightIcon;
       document.body.classList.toggle("dark");
       break;
     default:
