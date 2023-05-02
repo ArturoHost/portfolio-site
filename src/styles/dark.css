@@ -58,5 +58,6 @@ body.dark .projects-content .row-3 ul li {
 body.dark footer #github-logo img {
   background-color: var(--light);
   padding: 2px;
+  margin: 10px;
   border-radius: 50px;
 }
