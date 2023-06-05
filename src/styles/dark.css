@@ -9,6 +9,11 @@ body.dark {
   transition: 1s;
 }
 
+body .wrap {
+  animation: ease-in;
+  transition: 1s;
+}
+
 body.dark .wrap {
   background-color: var(--dark);
   animation: ease-in;
