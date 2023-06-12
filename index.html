@@ -18,6 +18,7 @@
         <li><a id="theme-button"></a></li>
       </ul>
     </header>
+
     <!-- Wrap -->
     <div id="wrap" class="wrap">
       <!-- Home -->
@@ -86,62 +87,72 @@
               <ul>
                 <li>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                    data-src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
                     alt="html5_logo"
+                    class="lazyload"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                    data-src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
                     alt="css3-logo"
+                    class="lazyload"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+                    data-src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
                     alt="javascript_logo"
+                    class="lazyload"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+                    data-src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
                     alt="typecript_logo"
+                    class="lazyload"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+                    data-src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
                     alt="bs_logo"
+                    class="lazyload"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
+                    data-src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
                     alt="angular_logo"
+                    class="lazyload"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg"
+                    data-src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg"
                     alt="dotnet_logo"
+                    class="lazyload"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                    data-src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
                     alt="nodejs_logo"
+                    class="lazyload"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg"
+                    data-src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg"
                     alt="sql_logo"
+                    class="lazyload"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/de/e/e1/Java-Logo.svg"
+                    data-src="https://upload.wikimedia.org/wikipedia/de/e/e1/Java-Logo.svg"
                     alt="java_logo"
+                    class="lazyload"
                   />
                 </li>
               </ul>
@@ -151,8 +162,9 @@
                 <div class="project-content">
                   <div>
                     <img
-                      src="./src/assets/img/login-demo.gif"
+                      data-src="./src/assets/img/login-demo.gif"
                       alt="Auth project"
+                      class="lazyload"
                     />
                   </div>
                   <div>
@@ -177,8 +189,9 @@
                 <div class="project-content">
                   <div>
                     <img
-                      src="./src/assets/img/lyric-sync-demo.gif"
+                      data-src="./src/assets/img/lyric-sync-demo.gif"
                       alt="Auth project"
+                      class="lazyload"
                     />
                   </div>
                   <div>
@@ -198,8 +211,9 @@
                 <div class="project-content">
                   <div>
                     <img
-                      src="./src/assets/img/parqueadero-demo.gif"
+                      data-src="./src/assets/img/parqueadero-demo.gif"
                       alt="parqueadero_demo"
+                      class="lazyload"
                     />
                   </div>
                   <div>
@@ -237,10 +251,16 @@
         </div>
       </footer>
     </div>
+
     <!--Work in progress-->
     <div class="wip-wrap">
       <div class="wip-pill"><span>Work in progress</span></div>
     </div>
+
+    <!--Dark Theme-->
     <script src="./src/js/themes.js"></script>
+
+    <!--LazySizes CDN for lazy load-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
   </body>
 </html>

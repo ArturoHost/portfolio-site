@@ -42,6 +42,17 @@ body {
   background-color: var(--light);
 }
 
+/* Lazy transition */
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: 2500ms;
+}
+
 .wrap {
   width: 1366px;
   margin-top: 40px;
